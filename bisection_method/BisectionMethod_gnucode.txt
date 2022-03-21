@@ -1,0 +1,11 @@
+gnuplot> stats "BisectionMethod.txt" name "A"
+gnuplot> set xrange[A_min_x-0.25:A_max_x+0.25]
+gnuplot> set yrange[A_min_y-1:A_max_y+1]
+gnuplot> set xlabel "Angle in Radians"
+gnuplot> set ylabel "sin(x)"
+gnuplot> set terminal gif animate delay 20
+gnuplot> set output "bisection.gif"
+do for [i=0:int(A_blocks-1)]{ plot "BisectionMethod.txt" index i w points pointtype 7 ps 2 lc rgb "black",sin(x) lc rgb '#ff0000', 0 lc rgb '#0000ff' dashtype 1}
+
+======================================================================================================================================
+Note: in the line "set Terminal animate delay 20" in one second 5 frames are shown as 100/20=5 if delay was 25 then 4 frames and so on

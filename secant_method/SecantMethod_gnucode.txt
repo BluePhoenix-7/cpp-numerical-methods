@@ -1,0 +1,8 @@
+gnuplot> stats "SecantMethod.txt" name "A"
+gnuplot> set xrange[A_min_x-0.25:A_max_x+0.25]
+gnuplot> set yrange[A_min_y-1:A_max_y+1]
+gnuplot> set xlabel "X axis"
+gnuplot> set ylabel "F(x)"
+gnuplot> set terminal gif animate delay 20
+gnuplot> set output "SecantMethod2.gif"    
+gnuplot> do for [i=0:int(A_blocks-1)]{ plot "SecantMethod.txt" index i w points pointtype 7 ps 2 lc rgb "black",(x**6-x-1) lc rgb '#ff0000',0 lc rgb "#0000ff" dashtype 2}

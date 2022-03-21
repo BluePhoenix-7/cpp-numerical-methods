@@ -29,6 +29,7 @@ For finding roots of a function[f(x)], we need to find the intersection of funct
 In bisection method, we have to enter boundaries in which suspect the root to be along with the accuracy(eta) till which we want the root. We are also required to enter a another paramter(delta) which tells minumum deflection in f(x) between consecutive steps .for eg if we select f(x)= sin(x) and we put boundaries (pi/2, 7*pi/4), eta = 0.0000001, delta = 0.0000001  ,we know that sinx has root in this range at x = 3.141592653589793 ,after running the code we get root at x = 3.14159256 which is accurate till 6 decimals which takes 23 steps. In the gif below we can see how the  solution from the algorithm moves closer and closer to real root. For more information about algorithm click [here](https://en.wikipedia.org/wiki/Bisection_method).
 <br/>![Alt Text](bisection_method/bisection.gif) &nbsp; &nbsp; &nbsp;
 <a>
+
 The curve in red is the original equation, the black point is the solution obtained from the algorithm, the line in blue is the xaxis. 
 Thus we can find roots of different functions, even roots for the functions whose roots are quite difficult to find on paper.
 </a>
