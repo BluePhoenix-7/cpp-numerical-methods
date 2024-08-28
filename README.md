@@ -30,6 +30,7 @@ In bisection method, we have to enter boundaries in which suspect the root to be
 <br/>![Alt Text](bisection_method/bisection.gif) &nbsp; &nbsp; &nbsp;
 <a>
 
+
 The curve in red is the original equation, the black point is the solution obtained from the algorithm, the line in blue is the xaxis. 
 Thus we can find roots of different functions, even roots for the functions whose roots are quite difficult to find on paper.
 </a>
