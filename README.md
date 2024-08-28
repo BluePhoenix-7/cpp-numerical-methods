@@ -1,6 +1,7 @@
 # Numerical-Analysis-Using-C++
 This repository contains codes of Numerical Methods in c++ which re used to solve different mathematical problems like finding roots of a function, solving differential equations, integration, etc. Which are then visualized with the help of gnuplot.
 
+
 # Table Of Contents 
   * [Libraries Used](#libraries-used)
   * [Usage](#usage)
